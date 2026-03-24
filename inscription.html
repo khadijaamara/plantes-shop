@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantShop - Vente de plantes en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">P</div>
+                    <div class="site-name">PlantShop</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header><!-- Section Inscription -->
+<section class="inscription-section">
+    <div class="container">
+        <div class="inscription-form-container">
+            <h1>Créer votre compte</h1>
+            <p>Rejoignez notre communauté de passionnés de plantes</p>
+            
+            <form id="inscriptionForm" class="inscription-form">
+                <div class="form-group">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <span class="error-message" id="nom-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                    <span class="error-message" id="prenom-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Date de naissance">Date de naissance *</label>
+                    <input type="text" id="Date de naissance" name="Date de naissance" required>
+                    <span class="error-message" id="Date de naissance-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+216 33 784 458">
+                    <span class="error-message" id="telephone-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur *</label>
+                    <input type="text" id="username" name="username" required>
+                    <span class="error-message" id="username-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe *</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">J'accepte les <a href="#">conditions générales d'utilisation</a> *</label>
+                    <span class="error-message" id="conditions-error"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Je souhaite m'abonner à la newsletter</label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                    <button type="reset" class="btn-secondary">Réinitialiser</button>
+                </div>
+            </form>
+
+            <div id="confirmation-message" class="confirmation-message" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h2>Inscription réussie !</h2>
+                <p>Merci de vous être inscrit sur PlantShop. Un email de confirmation a été envoyé à votre adresse.</p>
+                <button id="retour-accueil" class="btn-primary">Retour à l'accueil</button>
+            </div>
+
+            <div class="login-link">
+                <p>Déjà inscrit ? <a href="connexion.html">Connectez-vous ici</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PlantShop</h3>
+                <p>Votre boutique en ligne de confiance pour l'achat de plantes. Qualité, diversité et service client au cœur de notre engagement.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p>Email: contact@plantshop.tn</p>
+                    <p>WhatsApp: +216 31 29 29 00</p>
+                    <p>fax: +216 32 30 60 60</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <a href="index.html">Accueil</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="produits.html">Produits</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 PlantShop. Tous droits réservés. | Mentions légales</p>
+            <p>Projet réalisé par Mahdi Ahmadeche & Eya Zitouni</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

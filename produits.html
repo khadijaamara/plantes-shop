@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlantShop - Nos produits</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="produitss.js" defer></script>
+</head>
+<>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-section">
+          <div class="logo">P</div>
+          <div class="site-name">PlantShop</div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="produits.html">Produits</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE PRODUITS -->
+  <main class="products-main">
+    <div class="container">
+      <section class="products-section">
+        <h1 class="products-title">Nos Produits</h1>
+
+        <!-- FILTRES -->
+        <div class="product-filters" id="product-filters"></div>
+
+        <div class="products-layout">
+          
+          <!-- LISTE PRODUITS -->
+          <div class="products-grid" id="products-grid"></div>
+
+          <!-- PANIER -->
+          <aside class="cart">
+            <h2 class="cart-title">Panier</h2>
+
+            <!-- Message commande -->
+            <div id="order-confirmation" class="order-confirmation" style="display:none;">
+              <span class="order-confirmation-icon">✔</span>
+              Commande confirmée !
+            </div>
+
+            <!-- Panier vide -->
+            <div id="cart-empty" class="cart-empty">Votre panier est vide</div>
+
+            <!-- Items panier -->
+            <div id="cart-items" class="cart-items"></div>
+
+            <!-- Résumé -->
+            <div id="cart-summary" class="cart-summary" style="display:none;">
+              <div class="cart-total-row">
+                <span>Total :</span>
+                <span id="cart-total" class="cart-total-amount">0.00DT</span>
+              </div>
+
+              <!-- Commander -->
+              <button id="order-button" class="order-button">Commander</button>
+
+              <!-- NOUVEAU BOUTON RÉINITIALISER -->
+              <button id="reset-button" class="reset-button">
+                Réinitialiser le panier
+              </button>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+    </div>
+  </main>
+   <!-- Pied de page -->
+   <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PlantShop</h3>
+                <p>Votre boutique en ligne de confiance pour l'achat de plantes. Qualité, diversité et service client au cœur de notre engagement.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p>Email: contact@plantshop.tn</p>
+                    <p>WhatsApp: +216 31 29 29 00</p>
+                    <p>fax: +216 32 30 60 60</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <a href="index.html">Accueil</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="produits.html">Produits</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 PlantShop. Tous droits réservés. | Mentions légales</p>
+            <p>Projet réalisé par Mahdi Ahmadeche & Eya Zitouni</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
