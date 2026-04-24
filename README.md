@@ -1,2 +1,11 @@
-# plantes-shop
-Projet collaboratif de création d’un mini-site web statique sur les plantes en HTML, CSS et JavaScript. Le site comprend une page d’accueil, une page d’inscription et une page de produits, tout en mettant en pratique Git et GitHub pour le travail en équipe.
+# PlantShop - DS2
+
+## Prérequis
+- Docker version 20.10.23
+- Docker Compose version 3.8
+
+## Lancer le projet
+```bash
+docker-compose up
+```
+Le site sera accessible sur http://localhost:8080
